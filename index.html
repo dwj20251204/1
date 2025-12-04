@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>帮我点一下！</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+      background: #f6f6f6;
+      color: #333;
+      padding: 40px 26px;
+    }
+
+    .box {
+      max-width: 420px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 28px 22px 34px;
+      border-radius: 12px;
+      box-shadow: 0 6px 22px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666;
+      font-size: 15px;
+      margin: 12px 0 24px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #4c8bf5;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    button:hover {
+      background: #3a75d0;
+    }
+
+    .small {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h2>能不能帮我点一下这个？</h2>
+    <p>真的只需要 1 秒钟，谢谢你啦 🙏</p>
+
+    <button onclick="go()">进入投票</button>
+
+    <div class="small">（点击即可自动跳转）</div>
+  </div>
+
+  <script>
+    function go() {
+      window.location.href = "loading.html";
+    }
+  </script>
+</body>
+</html>
